@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EuRhbvuEfWIMgaSW62F8pX4lttH/gOvh52x0UO/lB9M4bbtQiEVmOjP9YtV0UR3Kz8Cb8M3/GbTIJk9hBy9new==",
+  "dgSpecHash": "aENL4Dt49yfz0e4ABgTT680SCbn5p6uYVKYlc13Udmq7g4RAxELvpAqyULYoGdMhQhHMD26VIgjl7WdDxtJ2dQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject\\ReadingLifeProject.csproj",
+  "projectFilePath": "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject - Copia\\ReadingLifeProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rogério\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\Rogério\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

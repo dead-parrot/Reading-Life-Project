@@ -15,5 +15,7 @@ namespace ReadingLifeProject.Data.DTOs
 
         [Required]
         public string Publisher { get; set; }
+        [Required]
+        public Category Category { get; set; }
     }
 }

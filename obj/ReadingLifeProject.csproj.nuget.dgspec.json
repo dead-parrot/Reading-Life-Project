@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject\\ReadingLifeProject.csproj": {}
+    "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject - Copia\\ReadingLifeProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject\\ReadingLifeProject.csproj": {
+    "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject - Copia\\ReadingLifeProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject\\ReadingLifeProject.csproj",
+        "projectUniqueName": "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject - Copia\\ReadingLifeProject.csproj",
         "projectName": "ReadingLifeProject",
-        "projectPath": "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject\\ReadingLifeProject.csproj",
+        "projectPath": "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject - Copia\\ReadingLifeProject.csproj",
         "packagesPath": "C:\\Users\\Rogério\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject\\obj\\",
+        "outputPath": "C:\\Users\\Rogério\\Desktop\\Code Together\\ReadingLifeProject - Copia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rogério\\AppData\\Roaming\\NuGet\\NuGet.Config",

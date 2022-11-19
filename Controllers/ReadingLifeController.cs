@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Google.Protobuf.WellKnownTypes;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Win32;
 using ReadingLifeProject.Data;
 using ReadingLifeProject.Data.DTOs;
 using ReadingLifeProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
@@ -26,7 +29,10 @@ namespace ReadingLifeProject.Controllers
             {
                 Title = bookDTO.Title,
                 Author = bookDTO.Author,
-                Publisher = bookDTO.Publisher
+                Publisher = bookDTO.Publisher,
+                Date = DateTime.Now,
+                Category = bookDTO.Category == null ? Category.Outros : bookDTO.Category,
+                Review = bookDTO.Review
             };
 
             _context.books.Add(book);
@@ -35,8 +41,32 @@ namespace ReadingLifeProject.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Book> GetBooks(){
-            return _context.books;
+        public IActionResult GetBooks([FromQuery] string review=""){
+            
+            if (String.IsNullOrEmpty(review)){
+                return Ok(_context.books);
+            }
+
+            IEnumerable<Book> booksFound = _context.books.Where<Book>(Book => Book.Review.Contains(review));
+
+            if(booksFound == null)
+            {
+                return BadRequest($"Não há reviews com a palavra {review}");
+            }
+
+            return Ok(booksFound);
+            
+        }
+
+        [HttpGet("resumo/{ano}/{mes}")]
+        public IActionResult GetSummaryOfBooks(int ano, int mes)
+        {
+            IEnumerable<Book> booksFound =  _context.books.Where<Book>(Book => Book.Date.Year == ano && Book.Date.Month == mes);
+            if (booksFound == null)
+            {
+                return BadRequest($"Não há registro de leituras para {mes}/{ano}");
+            }
+            return Ok(booksFound);
         }
 
         [HttpGet("{id}")]
